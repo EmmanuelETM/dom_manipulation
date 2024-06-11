@@ -11,7 +11,7 @@ El DOM permite a los lenguajes de programación, como JavaScript o Python, inter
 
 El DOM representa el documento como una estructura jerárquica de nodos, con el nodo raíz siendo el objeto document. Los nodos principales son:
 
-> 1. Elementos (Element Nodes): Representan etiquetas HTML o XML, como <div>, <p>, <a>, etc.
+1. Elementos (Element Nodes): Representan etiquetas HTML o XML, como `<div>`, `<p>`, `<a>`, etc.
 2. Atributos (Attribute Nodes): Representan atributos de los elementos, como class, id, href, etc.
 3. Texto (Text Nodes): Representan el contenido textual dentro de los elementos.
 4. Comentarios (Comment Nodes): Representan los comentarios en el código HTML o XML.
