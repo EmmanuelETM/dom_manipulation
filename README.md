@@ -52,7 +52,7 @@ document
 
 Representa la ventana del navegador. Es el objeto global en el contexto de un navegador web, lo que significa que todas las variables globales y funciones declaradas en el script se convierten en propiedades y métodos de window
 
-###### Propiedades y Metodos
+###### Propiedades y Metodos Comunes
 
 - window.document: Hace referencia al documento cargado en la ventana.
 - window.alert(): Muestra una alerta con un mensaje.
@@ -61,16 +61,56 @@ Representa la ventana del navegador. Es el objeto global en el contexto de un na
 
 #### Document
 
-###### Propiedades y Metodos
+Representa el documento HTML o XML cargado en la ventana. Proporciona métodos y propiedades para acceder y manipular el contenido y la estructura del documento.
+
+###### Propiedades y Metodos Comunes
+
+- document.getElementById(): Selecciona un elemento por su ID.
+- document.getElementsByClassName(): Selecciona elementos por su clase.
+- document.getElementsByTagName(): Selecciona elementos por su etiqueta.
+- document.querySelector(): Selecciona el primer elemento que coincide con un selector CSS.
+- document.querySelectorAll(): Selecciona todos los elementos que coinciden con un selector CSS.
+- document.createElement(): Crea un nuevo elemento
+
 #### Element
 
-###### Propiedades y Metodos
+Representa un elemento en el documento HTML. Todos los nodos de elementos son instancias del tipo Element.
+
+###### Propiedades y Metodos Comunes
+
+- element.innerHTML: Obtiene o establece el HTML interno del elemento.
+- element.textContent: Obtiene o establece el texto del elemento.
+- element.setAttribute(): Establece un atributo en el elemento.
+- element.getAttribute(): Obtiene el valor de un atributo del elemento.
+- element.removeAttribute(): Elimina un atributo del elemento.
+- element.classList: Proporciona métodos para manipular las clases del elemento (add, remove, toggle, contains).
+- element.appendChild(): Añade un nodo como el último hijo de un nodo padre.
+- element.removeChild(): Elimina un nodo hijo
 
 #### Node
 
-###### Propiedades y Metodos
+Es una interfaz base de la cual Element, Text, Comment y otros objetos heredan. Representa un solo nodo en el árbol DOM.
+
+###### Propiedades y Metodos Comunes
+
+- node.parentNode: Hace referencia al nodo padre.
+- node.childNodes: Devuelve una colección de los nodos hijos.
+- node.firstChild: Hace referencia al primer nodo hijo.
+- node.lastChild: Hace referencia al último nodo hijo.
+- node.nextSibling: Hace referencia al siguiente nodo hermano.
+- node.previousSibling: Hace referencia al nodo hermano anterior.
+- node.appendChild(): Añade un nodo al final de la lista de hijos.
+- node.removeChild(): Elimina un nodo hijo.
+
 #### Event
 
+Representa cualquier evento que pueda ocurrir en la interfaz del navegador, como clics del ratón, pulsaciones de teclas o eventos de carga.
 
+###### Propiedades y Metodos Comunes
+
+- event.type: El tipo de evento (por ejemplo, click, keyup).
+- event.target: El elemento que originó el evento.
+- event.preventDefault(): Cancela el comportamiento predeterminado del evento.
+- event.stopPropagation(): Evita que el evento se propague a los elementos padres.
 
 # Manipular el DOM desde la Consola
