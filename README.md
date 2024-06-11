@@ -39,9 +39,9 @@ Para este documento, la estructura del DOM es la siguiente:
 document
  ├── html
       ├── head
-      │    └── title ("Mi Página")
+      │    └── title
       └── body
-           ├── h1#titulo ("Hola Mundo")
-           ├── p.parrafo ("Este es un párrafo.")
-           └── a[href="https://www.ejemplo.com"] ("Visita Ejemplo")
+           ├── h1
+           ├── p
+           └── a
 ```
