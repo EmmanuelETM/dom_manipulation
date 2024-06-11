@@ -16,7 +16,8 @@ El DOM representa el documento como una estructura jerárquica de nodos, con el 
 3. Texto (Text Nodes): Representan el contenido textual dentro de los elementos.
 4. Comentarios (Comment Nodes): Representan los comentarios en el código HTML o XML.
 
-Para dar un ejemplo de la estructura del DOM, miremos este codigo:
+
+##### Ejemplo de Estructura del DOM:
 
 ```html
 <!DOCTYPE html>
@@ -31,6 +32,7 @@ Para dar un ejemplo de la estructura del DOM, miremos este codigo:
   </body>
 </html>
 ```
+
 Para este documento, la estructura del DOM es la siguiente:
 
 ```less
