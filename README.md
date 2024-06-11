@@ -46,6 +46,12 @@ document
            └── a
 ```
 
+
+# Manipular el DOM desde la Consola
+
+Para poder manipular el DOM desde la consola primero debemos saber los objetos que tiene, como el document, window, event, etc.
+
+
 ### Objetos Principales del DOM
 
 #### Window
@@ -113,4 +119,12 @@ Representa cualquier evento que pueda ocurrir en la interfaz del navegador, como
 - event.preventDefault(): Cancela el comportamiento predeterminado del evento.
 - event.stopPropagation(): Evita que el evento se propague a los elementos padres.
 
-# Manipular el DOM desde la Consola
+### Ejemplos de manipular el DOM
+
+##### Cambiar el contenido de un parrafo
+
+```javascript
+let parrafo = document.querySelector('p');
+parrafo.textContent = 'Contenido actualizado desde la consola';
+```
+
