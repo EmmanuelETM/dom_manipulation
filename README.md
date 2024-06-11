@@ -22,11 +22,11 @@ Para dar un ejemplo de la estructura del DOM, miremos este codigo:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mi Página</title>
+    <title>Estructura DOM</title>
   </head>
   <body>
-    <h1 id="titulo">Hola Mundo</h1>
-    <p class="parrafo">Este es un párrafo.</p>
+    <h1 id="title">Hello Everyone</h1>
+    <p class="text">Este es un párrafo.</p>
     <a href="https://www.ejemplo.com">Visita Ejemplo</a>
   </body>
 </html>
