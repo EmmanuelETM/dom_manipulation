@@ -15,3 +15,19 @@ El DOM representa el documento como una estructura jerárquica de nodos, con el 
 2. Atributos (Attribute Nodes): Representan atributos de los elementos, como class, id, href, etc.
 3. Texto (Text Nodes): Representan el contenido textual dentro de los elementos.
 4. Comentarios (Comment Nodes): Representan los comentarios en el código HTML o XML.
+
+Para dar un ejemplo de la estructura del DOM, miremos este codigo:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Página</title>
+  </head>
+  <body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <p class="parrafo">Este es un párrafo.</p>
+    <a href="https://www.ejemplo.com">Visita Ejemplo</a>
+  </body>
+</html>
+```
