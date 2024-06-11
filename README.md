@@ -31,3 +31,15 @@ Para dar un ejemplo de la estructura del DOM, miremos este codigo:
   </body>
 </html>
 ```
+Para este documento, la estructura del DOM es la siguiente:
+
+```less
+document
+ ├── html
+      ├── head
+      │    └── title ("Mi Página")
+      └── body
+           ├── h1#titulo ("Hola Mundo")
+           ├── p.parrafo ("Este es un párrafo.")
+           └── a[href="https://www.ejemplo.com"] ("Visita Ejemplo")
+```
