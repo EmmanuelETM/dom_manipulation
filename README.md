@@ -45,3 +45,32 @@ document
            ├── p
            └── a
 ```
+
+### Objetos Principales del DOM
+
+#### Window
+
+Representa la ventana del navegador. Es el objeto global en el contexto de un navegador web, lo que significa que todas las variables globales y funciones declaradas en el script se convierten en propiedades y métodos de window
+
+###### Propiedades y Metodos
+
+- window.document: Hace referencia al documento cargado en la ventana.
+- window.alert(): Muestra una alerta con un mensaje.
+- window.setTimeout(): Ejecuta una función después de un retraso especificado.
+- window.setInterval(): Ejecuta una función repetidamente con un intervalo de tiempo especificado.
+
+#### Document
+
+###### Propiedades y Metodos
+#### Element
+
+###### Propiedades y Metodos
+
+#### Node
+
+###### Propiedades y Metodos
+#### Event
+
+
+
+# Manipular el DOM desde la Consola
