@@ -217,3 +217,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 ```
+
+##### Explicacion
+
+###### Evento que asegura que el script se ejecute solo despues de que todo el conteido del DOM se haya cargado completamente.
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() { ... })
+```
+
+###### Se selecciona el input 
+
+```javascript
+const taskInput = document.getElementById('taskInput');
+```
+
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
