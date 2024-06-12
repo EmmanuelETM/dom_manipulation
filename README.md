@@ -127,4 +127,93 @@ Representa cualquier evento que pueda ocurrir en la interfaz del navegador, como
 let parrafo = document.querySelector('p');
 parrafo.textContent = 'Contenido actualizado desde la consola';
 ```
+##### Agregar un evento de clic a un boton que cambia el su propio texto
 
+```javascript
+let boton = document.querySelector('#miBoton');
+boton.addEventListener('click', function() {
+  this.textContent = '¡Has hecho clic en mí!';
+});
+```
+
+Ahora un ejemplo mas interesante
+
+##### Aplicacion interactiva de Lista de tareas
+
+###### HTML
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .task {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="taskInput" placeholder="Nueva tarea">
+    <button id="addTaskButton">Agregar Tarea</button>
+    <ul id="taskList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
+```
+
+###### App.js (javascript)
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+    const taskInput = document.getElementById('taskInput');
+    const addTaskButton = document.getElementById('addTaskButton');
+    const taskList = document.getElementById('taskList');
+
+    addTaskButton.addEventListener('click', addTask);
+
+    function addTask() {
+        const taskText = taskInput.value.trim();
+        if (taskText === '') {
+            alert('Por favor, ingresa una tarea.');
+            return;
+        }
+
+        const li = document.createElement('li');
+        li.className = 'task';
+
+        const span = document.createElement('span');
+        span.textContent = taskText;
+        span.addEventListener('click', toggleComplete);
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.addEventListener('click', deleteTask);
+
+        li.appendChild(span);
+        li.appendChild(deleteButton);
+        taskList.appendChild(li);
+
+        taskInput.value = '';
+    }
+
+    function toggleComplete(event) {
+        event.target.classList.toggle('completed');
+    }
+
+    function deleteTask(event) {
+        const task = event.target.parentElement;
+        taskList.removeChild(task);
+    }
+});
+```
