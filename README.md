@@ -1,4 +1,5 @@
-# DOM
+# Emmanuel Torres Malena | 2021-1097
+## DOM
 El DOM (Document Object Model) es una interfaz de programación para documentos HTML y XML. Representa la estructura de un documento como un árbol de nodos, donde cada nodo corresponde a una parte del documento, como un elemento, atributo, texto, etc.
 El DOM permite a los lenguajes de programación, como JavaScript o Python, interactuar con el contenido, la estructura y el estilo de los documentos web de manera dinámica. Gracias al DOM, los desarrolladores pueden:
 
